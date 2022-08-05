@@ -1,4 +1,4 @@
-<html lang="en" style="width: 100vw;" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation 
+<html lang="en" style="width: 100vw !important;" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation 
   postmessage websqldatabase indexeddb hashchange history draganddrop websockets 
   rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow 
   opacity cssanimations csscolumns cssgradients cssreflections csstransforms 
@@ -12,16 +12,79 @@
       font-weight: 500;
     }
 
+    .columns-container {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .columns-container-left {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .columns-container-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .education-certificates-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .education-container {
+      flex: 1;
+    }
+
+    .width-100vw {
+      width: 100vw !important;
+    }
+
+    .width-100 {
+      width: 100% !important;
+    }
+
+    .project-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .resume-layout.cv15 .resume__section:last-child {
+      padding-bottom: 1em !important;
+    }
 
     @media screen and (min-width: 1024px) {
       .resume-wrapper {
         width: 100%;
         height: 100%;
       }
+
     }
 
     /* Media Queries: Tabled Portrait */
     @media screen and (max-width: 768px) {
+      .hide-sd {
+        display: none;
+      }
+
+      .columns-container {
+        gap: 0px;
+        flex-direction: column;
+      }
+
+      .sub-add-before::before {
+        height: 56px !important;
+        top: 314px !important;
+      }
+
+      .add-before::before {
+        height: 45px !important;
+        top: 134px !important;
+      }
+
       .resume-wrapper {
         width: 100%;
         height: 100%;
@@ -32,7 +95,7 @@
         padding-right: 0px !important;
       }
 
-      .resume__side.resume__blocks_container {
+      .resume__blocks_container {
         width: 100% !important;
         display: block !important;
       }
@@ -103,7 +166,7 @@
   <link rel="shortcut icon" type="image/x-icon"
     href="https://cdn.resumebuild.com/assets/favicon-d63ea7b04acdc4f49b81835bb4a8835196e99779597404009f2607f052837dcb.ico">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
 
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
@@ -138,16 +201,17 @@
 
 
 
-<body class="basic resumebuild-com en app_resumebuild_com cookies-show">
+<body class="basic resumebuild-com en app_resumebuild_com cookies-show width-100vw">
 
 
-  <div class="resume-wrapper">
-    <div class="resume error-size" data-page-scale-to=".resume-layout" style="height: auto;">
+  <div class="resume-wrapper width-100">
+    <div class="resume error-size width-100" data-page-scale-to=".resume-layout" style="height: auto;">
 
-      <div class="two-column resume-layout cv15" style="min-height: 1089.93px; font-size: 13.0678px; display: block;">
+      <div class="two-column resume-layout cv15 width-100"
+        style="min-height: 1089.93px; font-size: 13.0678px; display: block;">
         <section edit_link="/resume/personal_infos/edit" actions="true"
-          class="animated fadeInDown delay-0.8s resume__header resume__section resume__heading resume__contact" hide_rename="true" hide_move="true"
-          hide_remove="true" style="" data-id="89425c1f-f481-4a7e-91b0-5f9b6c053aa8"
+          class="width-100 animated fadeInDown delay-0.8s resume__header resume__section resume__heading resume__contact"
+          hide_rename="true" hide_move="true" hide_remove="true" style="" data-id="89425c1f-f481-4a7e-91b0-5f9b6c053aa8"
           data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/89425c1f-f481-4a7e-91b0-5f9b6c053aa8/sort">
 
           <div class="resume__content">
@@ -165,7 +229,7 @@
                   </svg></i>
               </span>
               <span class="info-text">
-                <a style="color: inherit;" href="">3/237-1, NBS Nagar, Aniyapuram, Namakkal, TamilNadu – 637
+                <a style="color: inherit;" href="">3/237-1, NPS Nagar, Aniyapuram, Namakkal, TamilNadu – 637
                   002.(IN)</a></span>
             </div>
 
@@ -203,36 +267,47 @@
                   79</a></span>
             </div>
 
-            <div class="info-item">
-              <span class="info-label" style="visibility: hidden;">
-                <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em"
-                    height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1408 1408"
-                    class="iconify icon:fa:location-arrow" data-inline="false" data-width="1em" data-height="1em"
-                    data-icon="fa:location-arrow" style="transform: rotate(360deg);">
-                    <path
-                      d="M1401 93L761 1373q-17 35-57 35q-5 0-15-2q-22-5-35.5-22.5T640 1344V768H64q-22 0-39.5-13.5T2 719t4-42t29-30L1315 7q13-7 29-7q27 0 45 19q15 14 18.5 34.5T1401 93z"
-                      fill="currentColor"></path>
+            <div class="info-item" style="display: none;">
+              <span class="info-label">
+                <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" id="IconChangeColor">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                      id="mainIconPathAttribute" fill="#42A2E0" stroke="#42A2E0"></path>
                   </svg></i>
               </span>
               <span class="info-text"><a style="color: #42a2e0;"
-                  href="https://www.linkedin.com/in/vignesh-palanisamy-devops/"
-                  target="_blank">#linkedin/vignesh-palanisamy-devops</a></span>
+                  href="https://vignesh-palanisamy-dev.github.io/profile/"
+                  target="_blank">https://vignesh-palanisamy-dev.github.io/profile/</a></span>
+            </div>
+
+            <div class="info-item">
+              <span class="info-label">
+                <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                    id="IconChangeColor" height="14" width="14">
+                    <path
+                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                      id="mainIconPathAttribute" fill="#42A2E0" stroke="#42A2E0"></path>
+                  </svg></i>
+              </span>
+              <span class="info-text"><a style="color: #42a2e0;"
+                  href="https://www.linkedin.com/in/vignesh-palanisamy-devops/" target="_blank">
+                  https://www.linkedin.com/in/vignesh-palanisamy-devops/</a></span>
             </div>
 
           </div>
         </section>
-        <div class="resume__columns" style="padding-top: 0;">
-          <div data-sortable="" class="resume__main resume__blocks_container"
-            data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
+        <div class="resume__columns width-100" style="padding-top: 0;">
+
+          <div class="professional-summary">
             <section edit_link="/resume/summaries/edit" section="#<Sections::Summary:0x00007fdf80d84430>" actions="true"
-              class="resume__section resume__summary animated fadeInLeft delay-0.5s" style="" data-id="39224f23-009a-4a01-ab45-d57987617ecf"
+              class="resume__section resume__summary animated fadeInLeft delay-0.5s" style=""
+              data-id="39224f23-009a-4a01-ab45-d57987617ecf"
               data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/39224f23-009a-4a01-ab45-d57987617ecf/sort">
               <div class="resume__content">
                 <div class="resume__section-title">
                   <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em"
-                      height="1em"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="18px"
+                      height="18px"
                       style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
                       preserveAspectRatio="xMidYMid meet" viewBox="0 0 1792 1408">
                       <path
@@ -254,511 +329,709 @@
 
               </div>
             </section>
-            <section edit_link="/resume/educations" section="#<Sections::Education:0x00000000057fdb90>" actions="true"
-              class="resume__section resume__education" style="" data-id="f21871b7-6ac7-45cc-972f-c282a796da0f"
-              data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/f21871b7-6ac7-45cc-972f-c282a796da0f/sort">
+          </div>
 
-              <div class="resume__content animated fadeInLeft delay-1s">
-                <div class="resume__section-title">
-                  <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em"
-                      height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 2304 1536"
-                      class="iconify icon:fa:graduation-cap" data-inline="false" data-width="1em" data-height="1em"
-                      data-icon="fa:graduation-cap" style="transform: rotate(360deg);">
-                      <path
-                        d="M1774 708l18 316q4 69-82 128t-235 93.5t-323 34.5t-323-34.5t-235-93.5t-82-128l18-316l574 181q22 7 48 7t48-7zm530-324q0 23-22 31L1162 767q-4 1-10 1t-10-1L490 561q-43 34-71 111.5T385 851q63 36 63 109q0 69-58 107l58 433q2 14-8 25q-9 11-24 11H224q-15 0-24-11q-10-11-8-25l58-433q-58-38-58-107q0-73 65-111q11-207 98-330L22 415q-22-8-22-31t22-31L1142 1q4-1 10-1t10 1l1120 352q22 8 22 31z"
-                        fill="currentColor"></path>
-                    </svg></i>
-                  <h2>Education</h2>
-                </div>
-                <div class="xp-item">
-                  <div class="xp-job">
-                    Bachelor Of Engineering (2014 - 2018)
-                  </div>
-                  <div class="color-gray">
-                    KNCET, ECE, CGPA: 8.6 (First class with distinction)
-                  </div>
-                </div>
-                <div class="xp-item">
-                  <div class="xp-job">
-                    Senior Secondary Education (2014)
-                  </div>
-                  <div class="color-gray">
-                    Maths & Biology, Percentage: 91.42%
-                  </div>
-                </div>
-                <div class="xp-item">
-                  <div class="xp-job">
-                    Secondary Education (2012)
-                  </div>
-                  <div class="color-gray">
-                    General, Percentage: 93.20%
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section edit_link="/resume/others/fc19bbed-b801-45c9-bf50-25f0b80e221c/edit"
-              section="#<Sections::Other:0x00007fdf80d84020>" actions="true" class="resume__section resume__others"
-              style="" data-id="fc19bbed-b801-45c9-bf50-25f0b80e221c"
-              data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/fc19bbed-b801-45c9-bf50-25f0b80e221c/sort">
+          <div class="columns-container width-100">
 
-              <div class="resume__content animated fadeInLeft delay-2s">
-                <div class="resume__section-title">
-                  <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em"
-                      height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1696 1536"
-                      class="iconify icon:fa:book" data-inline="false" data-width="1em" data-height="1em"
-                      data-icon="fa:book" style="transform: rotate(360deg);">
-                      <path
-                        d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43zm-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"
-                        fill="currentColor"></path>
-                    </svg></i>
-                  <h2>Projects</h2>
-                </div>
-                <div class="other text-justifying">
-
-                  <div class="resume__text">
-                    <div class="extra-info padding-bottom-16">
-                      <div><strong>Capillary Technologies</strong></div>
-                    </div>
-
-                    <div class="extra-info flex-item padding-bottom-16">
-                      <div class="round-icon"></div>
-                      <div class="other-info" style="flex: 1;">
-                        <div><span class="project-title">Promotion Engine and &amp; Gift Voucher:</span><br><br>A
-                          Promotion Engine/Gift voucher are the promotions that get applied when the customer reaches
-                          the
-                          cart page.
-                          These promotions apply on a customer's shopping cart based on the cart value or cart items
-                          present in it.
-
-                          For example, consider <b>Buy one Get one free</b> (BOGO) on Shirts Promotion which gets
-                          applied only
-                          when the user adds <b>two shirts</b> to the cart.<br><br>Tech stack:
-                          MERN.<br><br>
-                          Responsibilities:
-                          In short span, Grasp more product knowledge and developed enrich UI app which supports
-                          complex
-                          functionality with GTM integration. Via this incentive with campaign, company makes reasonable
-                          <b>revenue
-                            increase</b>.
-                          <br><br>Reference: <a style="color: #42a2e0;"
-                            href="https://support.capillarytech.com/en/support/solutions/articles/4000174561-create-cart-or-catalog-promotions"
-                            target="_blank">
-                            #promo-engine</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="extra-info flex-item padding-bottom-16">
-                      <div class="round-icon"></div>
-                      <div class="other-info" style="flex: 1;">
-                        <div><span class="project-title">Loyalty Plus:</span><br><br>Loyalty programs, sponsored by
-                          retailers and other businesses, offer rewards, discounts, and other special incentives
-                          as a way to attract and retain customers based on tiers (silver, gold,
-                          platinum). They are
-                          designed to encourage repeat
-                          business, offering people a reward for store/brand loyalty. <br>Example: If customer buy,
-                          <strong>
-                            "x"
-                          </strong>
-                          product quantity / <strong>"y"</strong> purchase amount.
-                          Those customer is <strong>upgrade</strong> to next tier (sliver tier to gold tier) and based
-                          on
-                          validity period
-                          those customer get <strong>downgrade</strong> (platinum tier to silver tier). This product is
-                          configured with communication channels
-                          for
-                          upgarde, downgrade and expiry (<strong>10 days</strong> left for offer get expired).
-                          <br><br>Tech stack:
-                          MERN.<br><br>
-
-                          Responsibilities:
-                          Rewamped from old technology to latest
-                          technology and played major role in complex tier flow redesign and this is <strong>more
-                            revenue
-                            product</strong> in capillary. Via this customer
-                          satisfaction greatly increased.
-                          <br><br>Reference: <a style="color: #42a2e0;"
-                            href="https://medium.com/capillary-tech/loyalty-invigorated-with-a-fresh-new-look-e02739864d35"
-                            target="_blank">
-                            #loyalty-invigorated-with-a-fresh-new-look</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="extra-info flex-item padding-bottom-16">
-                      <div class="round-icon"></div>
-                      <div class="other-info" style="flex: 1;">
-                        <div><span class="project-title">Metrics &amp; On Call Contribution:</span><br><br>
-                          Actively involed in metrics and customer events tracking to <b>prevent production bugs
-                            pro-actively</b>.
-                          Tracked API Endpoint - errors (4xx+5xx), response time & apdex score and UI - JS errors.
-                          Implemented UI based error boundary to handle JS errors with enrich UI/UX.<br><br>Tools:
-                          New relic (API), Fullstory (GTM Events), Bugsnag (UI) & Grafana (Kubernetes App
-                          Overview,
-                          Resource consumption &
-                          Kube pod details)
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="extra-info flex-item padding-bottom-16">
-                      <div class="round-icon"></div>
-                      <div class="other-info" style="flex: 1;">
-                        <div><span class="project-title">Open Source Contribution:</span><br><br>
-                          Actively participated in FOSS united open source competition and devloped a browser extension
-                          <b>(Cuckoo Dooku)</b>
-                          that helps you develop healthy habits which you often overlook while at work and developed a
-                          free one to
-                          one video call app <b>(V-Connect)</b> with instant chat feature.
-
-                          <br><br>Reference: <a style="color: #42a2e0;"
-                            href="https://github.com/omkar-pote/count-cuckoo#readme" target="_blank">
-                            #cuckoo-dooku/readme</a>, <a style="color: #42a2e0;"
-                            href=" https://v-connect-v1.herokuapp.com/" target="_blank">
-                            #v-connect/live</a>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </section>
-
-            <section class="animated fadeInLeft delay-0.5s">
-              <div data-sortable-2="" class="resume__side resume__blocks_container"
-                data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template"
-                style="width: 50%;">
-                <section edit_link="/resume/skills/edit" section="#<Sections::Skill:0x00000000077bc5d0>" actions="true"
-                  class="resume__section resume__skills" style="" data-id="8700676d-6c01-4fd5-b831-7d649d529675"
-                  data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/8700676d-6c01-4fd5-b831-7d649d529675/sort">
-                  <div class="resume__content">
-                    <div class="resume__section-title">
-                      <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em"
-                          height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1696 1536"
-                          class="iconify icon:fa:book" data-inline="false" data-width="1em" data-height="1em"
-                          data-icon="fa:book" style="transform: rotate(360deg);">
-                          <path
-                            d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43zm-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"
-                            fill="currentColor"></path>
-                        </svg></i>
-                      <h2>Certifications</h2>
-                    </div>
-                    <div class="resume__text">
-                      <div class="extra">
-                        <div class="extra-info">
-                          Product Expect Certified - Promo Engine.
-                        </div>
-                        <div class="color-gray">Issued by Capillary Technologies - Apr 2022</div>
-                      </div>
-
-                      <div class="extra">
-                        <div class="extra-info">
-                          Oracle Certified Associate, Java SE 8 Programmer.
-                        </div>
-                        <div class="color-gray">Issued by OracleOracle - May 2018</div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-
-              <div data-sortable-2="" class="resume__side resume__blocks_container"
+            <div data-sortable="" class="columns-container-left">
+              <div style="padding-bottom: 2rem;" data-sortable-2="" class=" resume__blocks_container"
                 data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
                 <section edit_link="/resume/skills/edit" section="#<Sections::Skill:0x00000000077bc5d0>" actions="true"
-                  class="resume__section resume__skills" style="" data-id="8700676d-6c01-4fd5-b831-7d649d529675"
+                  class="animated fadeInRight delay-2s resume__section resume__skills" style=""
+                  data-id="8700676d-6c01-4fd5-b831-7d649d529675"
                   data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/8700676d-6c01-4fd5-b831-7d649d529675/sort">
                   <div class="resume__content">
                     <div class="resume__section-title">
-                      <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em"
-                          height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1696 1536"
-                          class="iconify icon:fa:book" data-inline="false" data-width="1em" data-height="1em"
-                          data-icon="fa:book" style="transform: rotate(360deg);">
+                      <i class="resume__svg-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                          class="bi bi-boxes" viewBox="0 0 16 16" id="IconChangeColor">
                           <path
-                            d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43zm-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"
-                            fill="currentColor"></path>
-                        </svg></i>
-                      <h2>Language</h2>
+                            d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
+                            id="mainIconPathAttribute" fill="#ffffff"></path>
+                        </svg>
+                      </i>
+                      <h2>Skills</h2>
                     </div>
                     <div class="resume__text">
                       <div class="extra">
                         <div class="extra-info">
-                          English.
+                          React.js, Node.js, JavaScript(Es6, Ecma20), CSS3 &amp; HTML5
+                        </div>
+                        <div class="extra-details">
+                          <div class="extra-details__progress" style="width:95%"></div>
                         </div>
                       </div>
 
                       <div class="extra">
                         <div class="extra-info">
-                          Tamil.
+                          Redux, Antd, Intl, UT/IT - React testing library &amp; Jest
+                        </div>
+                        <div class="extra-details">
+                          <div class="extra-details__progress" style="width:85%"></div>
+                        </div>
+                      </div>
+
+                      <div class="extra">
+                        <div class="extra-info">
+                          Git, Scurm, Metrics - GTM, New relic, Bugsnag &amp; Fullstory
+                        </div>
+                        <div class="extra-details">
+                          <div class="extra-details__progress" style="width:75%"></div>
+                        </div>
+                      </div>
+
+                      <div class="extra">
+                        <div class="extra-info">
+                          On call - Site 24*7 alert, New relic incident alert &amp; Grafana
+                        </div>
+                        <div class="extra-details">
+                          <div class="extra-details__progress" style="width:65%"></div>
+                        </div>
+                      </div>
+
+                      <div class="extra">
+                        <div class="extra-info">
+                          Mysql, PostgreSQL, Mongodb, Sqlite, Redis &amp; Postman
+                        </div>
+                        <div class="extra-details">
+                          <div class="extra-details__progress" style="width:55%"></div>
+                        </div>
+                      </div>
+
+                      <div class="extra">
+                        <div class="extra-info">
+                          React Native, Java, Vue.js, Socket, Webrtc, SVN &amp; FB pixel
+                        </div>
+                        <div class="extra-details">
+                          <div class="extra-details__progress" style="width:45%"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </section>
               </div>
-            </section>
 
+            </div>
+
+            <div data-sortable="" class="columns-container-right">
+              <div style="padding-bottom: 2rem;" data-sortable-2="" class=" resume__blocks_container"
+                data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
+                <section edit_link="/resume/skills/edit" section="#<Sections::Skill:0x00000000077bc5d0>" actions="true"
+                  class="animated fadeInRight delay-1s resume__section resume__skills" style=""
+                  data-id="8700676d-6c01-4fd5-b831-7d649d529675"
+                  data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/8700676d-6c01-4fd5-b831-7d649d529675/sort">
+                  <div class="resume__content">
+                    <div class="resume__section-title">
+                      <i class="resume__svg-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                          class="bi bi-building" viewBox="0 0 16 16" id="IconChangeColor">
+                          <path fill-rule="evenodd"
+                            d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"
+                            id="mainIconPathAttribute"></path>
+                          <path
+                            d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"
+                            id="mainIconPathAttribute"></path>
+                        </svg>
+
+                      </i>
+                      <h2>Experience</h2>
+                    </div>
+                    <div class="resume__text">
+                      <div style="display: flex; align-items: center; gap:8px" class="padding-bottom-16">
+                        <img style="position: static; width: 32px; height: 32px;"
+                          src="data:image/jpeg;base64,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">
+                        </img>
+                        <div class="extra-info">
+                          <div>Capillary Technologies</div>
+                          <div class="color-gray">1 yr 8 mos</div>
+                        </div>
+
+                      </div>
+                      <div class="sub-add-before extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Software Development Engineer - 1 (Full time)</div>
+                          <div class="color-gray">Jan 2022 - Present . 7 mos</div>
+                        </div>
+                      </div>
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Software Engineer via Recro payroll</div>
+                          <div class="color-gray">Dec 2020 - Dec 2021 . 1 yr 1 mo</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="resume__text">
+                      <div style="display: flex; align-items: center; gap:8px" class="padding-bottom-16">
+                        <svg style="color: red" height="28" width="28" id="icons" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512">
+                          <path
+                            d="M130.54,358.31c-12.83,1.88-33.95,5.38-48-10.56S56.34,293.32,51,258.92c-7.88-50.7-.06-93.43,22-120.31,13-15.83,30.06-25,49.34-26.46,16.51-1.27,41.18,5.19,65,43.19,14.92,23.81,26.27,55.44,31.14,86.77h0c5.88,37.82,11.61,78.18-8.44,92.65-11.31,8.17-19.43,11-38.62,15.57C155.64,354.08,143.38,356.42,130.54,358.31Z"
+                            fill="red"></path>
+                          <path
+                            d="M107.72,390.84l108.89-22.46c9.2-1.9,16.58,3.16,20,18.32,11.22,49.76-4.86,109.3-55.22,109.3-47.69,0-79.47-54.36-84.66-83.58C94.36,399.17,97.74,392.89,107.72,390.84Z"
+                            fill="red"></path>
+                          <path
+                            d="M340.59,254.34c-19.19-4.55-27.31-7.4-38.62-15.57-20.05-14.47-14.32-54.83-8.44-92.65h0c4.87-31.33,16.22-63,31.14-86.77,23.8-38,48.47-44.46,65-43.19C408.93,17.63,426,26.78,439,42.61c22.08,26.88,29.9,69.61,22,120.31-5.35,34.4-17.46,72.76-31.59,88.83s-35.13,12.44-48,10.56S356.36,258.08,340.59,254.34Z"
+                            fill="red"></path>
+                          <path
+                            d="M404.28,294.84,295.39,272.38c-9.2-1.9-16.58,3.16-20,18.32C264.18,340.46,280.26,400,330.62,400c47.69,0,79.47-54.36,84.66-83.58C417.64,303.17,414.26,296.89,404.28,294.84Z"
+                            fill="red"></path>
+                        </svg>
+
+                        <div class="extra-info">
+                          <div>Infoview Technologies</div>
+                          <div class="color-gray">2 yrs 7 mos</div>
+                        </div>
+                      </div>
+
+                      <div class="add-before extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Engineer (Vaken Technologies)</div>
+                          <div class="color-gray">Jul 2020 - Dec 2020 . 6 mos</div>
+                          <div class="color-gray">Vaken is newly derived company from Infoview</div>
+                        </div>
+                      </div>
+                      <div class="extra-info flex-item">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Trainee Engineer</div>
+                          <div class="color-gray">Jun 2018 - Jun 2020 . 2 yrs 1 mo</div>
+                        </div>
+                      </div>
+                    </div>
+                </section>
+              </div>
+            </div>
           </div>
 
 
+          <div class="columns-container width-100">
+            <div data-sortable="" class="columns-container-left resume__blocks_container"
+              data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
 
 
-          <div style="padding-bottom: 2rem;" data-sortable-2="" class="resume__side resume__blocks_container"
-            data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
-            <section edit_link="/resume/skills/edit" section="#<Sections::Skill:0x00000000077bc5d0>" actions="true"
-              class="animated fadeInRight delay-1s resume__section resume__skills" style="" data-id="8700676d-6c01-4fd5-b831-7d649d529675"
-              data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/8700676d-6c01-4fd5-b831-7d649d529675/sort">
-              <div class="resume__content">
-                <div class="resume__section-title">
-                  <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em"
-                      height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1696 1536"
-                      class="iconify icon:fa:book" data-inline="false" data-width="1em" data-height="1em"
-                      data-icon="fa:book" style="transform: rotate(360deg);">
-                      <path
-                        d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43zm-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"
-                        fill="currentColor"></path>
-                    </svg></i>
-                  <h2>Experience</h2>
+              <section edit_link="/resume/others/fc19bbed-b801-45c9-bf50-25f0b80e221c/edit"
+                section="#<Sections::Other:0x00007fdf80d84020>" actions="true" class="resume__section resume__others"
+                style="" data-id="fc19bbed-b801-45c9-bf50-25f0b80e221c"
+                data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/fc19bbed-b801-45c9-bf50-25f0b80e221c/sort">
+
+                <div class="resume__content animated fadeInLeft delay-2s">
+                  <div class="resume__section-title">
+                    <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                        fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16" id="IconChangeColor">
+                        <path
+                          d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"
+                          id="mainIconPathAttribute" fill="#ffffff"></path>
+                        <path
+                          d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"
+                          id="mainIconPathAttribute" fill="#ffffff"></path>
+                      </svg></i>
+                    <h2>Projects</h2>
+                  </div>
+                  <div class="other text-justifying">
+
+                    <div class="project-container">
+
+
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon hide-sd"></div>
+                        <div class="other-info" style="flex: 1;">
+
+                          <div>
+                            <div style="display: flex; align-items: center; gap:8px">
+                              <img style="position: static; width: 32px; height: 32px;"
+                                src="data:image/jpeg;base64,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">
+                              </img>
+                              <span class="project-title">Promotion Engine &amp; Gift Voucher:</span>
+                            </div>
+
+                            <br>A
+                            Promotion Engine/Gift voucher are the promotions that get applied when the customer reaches
+                            the
+                            cart page.
+                            These promotions apply on a customer's shopping cart based on the cart value or cart items
+                            present in it.
+
+                            For example, consider <b>Buy one Get one free</b> (BOGO) on Shirts Promotion which gets
+                            applied only
+                            when the user adds <b>two shirts</b> to the cart. <br><br>
+
+                            <span>Tech stack: MERN & <a style="color: #222;"
+                                href="https://support.capillarytech.com/en/support/solutions/articles/4000174561-create-cart-or-catalog-promotions"
+                                target="_blank">
+                                <div style="display: inline-flex; align-items: center; gap:4px;">
+                                  <div>Reference link</div>
+                                  <div style="margin-bottom: 4px;">
+                                    <svg width="16" height="16" style="color: #42a2e0"
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                      <path
+                                        d="M18,10.82a1,1,0,0,0-1,1V19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8A1,1,0,0,1,5,7h7.18a1,1,0,0,0,0-2H5A3,3,0,0,0,2,8V19a3,3,0,0,0,3,3H16a3,3,0,0,0,3-3V11.82A1,1,0,0,0,18,10.82Zm3.92-8.2a1,1,0,0,0-.54-.54A1,1,0,0,0,21,2H15a1,1,0,0,0,0,2h3.59L8.29,14.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L20,5.41V9a1,1,0,0,0,2,0V3A1,1,0,0,0,21.92,2.62Z"
+                                        fill="#42a2e0"></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </a></span>
+
+                            <br><br>
+                            Responsibilities:
+                            In short span, Grasp more product knowledge and developed enrich UI app which supports
+                            complex
+                            functionality with GTM integration. Via this incentive with campaign, company makes
+                            reasonable
+                            <b>revenue
+                              increase</b>.
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon hide-sd"></div>
+                        <div class="other-info" style="flex: 1;">
+                          <div>
+                            <div style="display: flex; align-items: center; gap:8px">
+                              <img style="position: static; width: 32px; height: 32px;"
+                                src="data:image/jpeg;base64,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">
+                              </img>
+                              <span class="project-title">Loyalty Plus:</span>
+                            </div>
+                            <br>Loyalty programs, sponsored by
+                            retailers and other businesses, offer rewards, discounts, and other special incentives
+                            as a way to attract and retain customers based on tiers (silver, gold,
+                            platinum). They are
+                            designed to encourage repeat
+                            business, offering people a reward for store/brand loyalty. <br>Example: If customer
+                            purchase for <strong>$1000</strong>.
+                            Those customer is <strong>upgrade</strong> to next tier and downgrade based
+                            on
+                            validity period.
+                            <br><br>
+
+                            <span>Tech stack: MERN & <a style="color: #222;"
+                                href="https://medium.com/capillary-tech/loyalty-invigorated-with-a-fresh-new-look-e02739864d35"
+                                target="_blank">
+                                <div style="display: inline-flex; align-items: center; gap:4px;">
+                                  <div>Reference link</div>
+                                  <div style="margin-bottom: 4px;">
+                                    <svg width="16" height="16" style="color: #42a2e0"
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                      <path
+                                        d="M18,10.82a1,1,0,0,0-1,1V19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8A1,1,0,0,1,5,7h7.18a1,1,0,0,0,0-2H5A3,3,0,0,0,2,8V19a3,3,0,0,0,3,3H16a3,3,0,0,0,3-3V11.82A1,1,0,0,0,18,10.82Zm3.92-8.2a1,1,0,0,0-.54-.54A1,1,0,0,0,21,2H15a1,1,0,0,0,0,2h3.59L8.29,14.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L20,5.41V9a1,1,0,0,0,2,0V3A1,1,0,0,0,21.92,2.62Z"
+                                        fill="#42a2e0"></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </a></span>
+
+
+                            <br><br>
+
+
+
+                            Responsibilities:
+                            Rewamped from old technology to latest
+                            technology and played major role in complex tier flow redesign and this is more
+                            revenue
+                            product in capillary. Via this <strong>customer
+                              satisfaction greatly increased</strong>.
+                            <br><br>
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon hide-sd"></div>
+                        <div class="other-info" style="flex: 1;">
+                          <div>
+                            <div style="display: flex; align-items: center; gap:8px">
+                              <img style="position: static; width: 32px; height: 32px;"
+                                src="data:image/jpeg;base64,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">
+                              </img>
+                              <span class="project-title">Metrics &amp; On Call Contribution:</span>
+                            </div>
+                            <br>
+                            Actively involed in metrics and customer events tracking to <b>prevent production bugs
+                              pro-actively</b>.
+                            Tracked API Endpoint - errors (4xx+5xx), response time & apdex score and UI - JS errors.
+                            Implemented UI based error boundary to handle JS errors with enrich UI/UX.<br><br>Tools:
+                            New relic (API), Fullstory (GTM Events), Bugsnag (UI) & Grafana (Kubernetes App
+                            Overview,
+                            Resource consumption &
+                            Kube pod details)
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="extra-info flex-item">
+                        <div class="round-icon hide-sd"></div>
+                        <div class="other-info" style="flex: 1;">
+                          <div>
+                            <div style="display: flex; align-items: center; gap:8px">
+                              <img style="position: static; width: 32px; height: 32px;"
+                                src="data:image/jpeg;base64,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">
+                              </img>
+                              <span class="project-title">Open Source Contribution:</span>
+                            </div><br>
+                            Actively participated in FOSS united open source competition and devloped a browser
+                            extension
+                            <b>(Cuckoo Dooku)</b>
+                            that helps you develop healthy habits which we often overlook while at work and developed a
+                            free one to
+                            one video call app <b>(V-Connect)</b> with instant chat feature.
+
+                            <br><br>
+
+                            <div style="display: flex; align-items: center; gap:4px; flex-wrap: wrap;">
+                              <div>Reference link:</div>
+
+                              <a style="color: #222;" href="https://github.com/omkar-pote/count-cuckoo#readme"
+                                target="_blank">
+                                <div style="display: inline-flex; align-items: center; gap:4px;">
+                                  <div>cuckoo-dooku</div>
+                                  <div style="margin-bottom: 4px;">
+                                    <svg width="16" height="16" style="color: #42a2e0"
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                      <path
+                                        d="M18,10.82a1,1,0,0,0-1,1V19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8A1,1,0,0,1,5,7h7.18a1,1,0,0,0,0-2H5A3,3,0,0,0,2,8V19a3,3,0,0,0,3,3H16a3,3,0,0,0,3-3V11.82A1,1,0,0,0,18,10.82Zm3.92-8.2a1,1,0,0,0-.54-.54A1,1,0,0,0,21,2H15a1,1,0,0,0,0,2h3.59L8.29,14.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L20,5.41V9a1,1,0,0,0,2,0V3A1,1,0,0,0,21.92,2.62Z"
+                                        fill="#42a2e0"></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </a>
+                              <span style="margin: 0 8px">|</span>
+                              <a style="color: #222;" href="https://v-connect-v1.herokuapp.com/" target="_blank">
+                                <div style="display: inline-flex; align-items: center; gap:4px;">
+                                  <div>v-connect</div>
+                                  <div style="margin-bottom: 4px;">
+                                    <svg width="16" height="16" style="color: #42a2e0"
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                      <path
+                                        d="M18,10.82a1,1,0,0,0-1,1V19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8A1,1,0,0,1,5,7h7.18a1,1,0,0,0,0-2H5A3,3,0,0,0,2,8V19a3,3,0,0,0,3,3H16a3,3,0,0,0,3-3V11.82A1,1,0,0,0,18,10.82Zm3.92-8.2a1,1,0,0,0-.54-.54A1,1,0,0,0,21,2H15a1,1,0,0,0,0,2h3.59L8.29,14.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L20,5.41V9a1,1,0,0,0,2,0V3A1,1,0,0,0,21.92,2.62Z"
+                                        fill="#42a2e0"></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </a>
+
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+
+
+              <div class="education-certificates-container">
+
+                <div data-sortable-2="" class="education-container resume__blocks_container"
+                  data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
+                  <section edit_link="/resume/educations" section="#<Sections::Education:0x00000000057fdb90>"
+                    actions="true" class="resume__section resume__education" style=""
+                    data-id="f21871b7-6ac7-45cc-972f-c282a796da0f"
+                    data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/f21871b7-6ac7-45cc-972f-c282a796da0f/sort">
+
+                    <div class="resume__content animated fadeInLeft delay-1s">
+                      <div class="resume__section-title">
+                        <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="20"
+                            height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 2304 1536"
+                            class="iconify icon:fa:graduation-cap" data-inline="false" data-width="1em"
+                            data-height="1em" data-icon="fa:graduation-cap" style="transform: rotate(360deg);">
+                            <path
+                              d="M1774 708l18 316q4 69-82 128t-235 93.5t-323 34.5t-323-34.5t-235-93.5t-82-128l18-316l574 181q22 7 48 7t48-7zm530-324q0 23-22 31L1162 767q-4 1-10 1t-10-1L490 561q-43 34-71 111.5T385 851q63 36 63 109q0 69-58 107l58 433q2 14-8 25q-9 11-24 11H224q-15 0-24-11q-10-11-8-25l58-433q-58-38-58-107q0-73 65-111q11-207 98-330L22 415q-22-8-22-31t22-31L1142 1q4-1 10-1t10 1l1120 352q22 8 22 31z"
+                              fill="currentColor"></path>
+                          </svg></i>
+                        <h2>Education</h2>
+                      </div>
+                      <div class="xp-item">
+                        <div class="extra-info">
+                          Bachelor Of Engineering (2014 - 2018)
+                        </div>
+                        <div class="color-gray">
+                          KNCET, ECE, CGPA: 8.6 (First class with distinction)
+                        </div>
+                      </div>
+                      <div class="xp-item">
+                        <div class="extra-info">
+                          Senior Secondary (2014) <span style="margin: 0 8px">|</span>
+                          Secondary Education (2012)
+                        </div>
+                        <div class="color-gray">
+                          Percentage: 91.42% <span style="margin: 0 8px">|</span> 93.20%
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
                 </div>
-                <div class="resume__text">
-                  <div class="extra-info padding-bottom-16">
-                    <div>Capillary Technologies</div>
-                    <div class="color-gray">1 yr 8 mos</div>
-                  </div>
-                  <div class="sub-add-before extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Software Development Engineer - 1 (Full time)</div>
-                      <div class="color-gray">Jan 2022 - Present . 7 mos</div>
+
+                <div data-sortable-2="" class="certificates-container resume__blocks_container"
+                  data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
+                  <section edit_link="/resume/skills/edit" section="#<Sections::Skill:0x00000000077bc5d0>"
+                    actions="true" class="resume__section resume__skills" style=""
+                    data-id="8700676d-6c01-4fd5-b831-7d649d529675"
+                    data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/8700676d-6c01-4fd5-b831-7d649d529675/sort">
+                    <div class="resume__content">
+                      <div class="resume__section-title">
+                        <i class="resume__svg-icon">
+                          <svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            id="IconChangeColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10 7V37C10 38.6569 11.3431 40 13 40H26V36.4649C24.8044 35.7733 24 34.4806 24 33C24 30.7909 25.7909 29 28 29C30.2091 29 32 30.7909 32 33C32 34.4806 31.1956 35.7733 30 36.4649V40H35C36.6569 40 38 38.6569 38 37V7C38 5.34315 36.6569 4 35 4H13C11.3431 4 10 5.34315 10 7ZM28 35C29.1046 35 30 34.1046 30 33C30 31.8954 29.1046 31 28 31C26.8954 31 26 31.8954 26 33C26 34.1046 26.8954 35 28 35ZM18 11C18 10.4477 18.4477 10 19 10L29 10C29.5523 10 30 10.4477 30 11C30 11.5523 29.5523 12 29 12L19 12C18.4477 12 18 11.5523 18 11ZM15 16C14.4477 16 14 16.4477 14 17C14 17.5523 14.4477 18 15 18H33C33.5523 18 34 17.5523 34 17C34 16.4477 33.5523 16 33 16H15ZM14 21C14 20.4477 14.4477 20 15 20H33C33.5523 20 34 20.4477 34 21C34 21.5523 33.5523 22 33 22H15C14.4477 22 14 21.5523 14 21ZM15 24C14.4477 24 14 24.4477 14 25C14 25.5523 14.4477 26 15 26H33C33.5523 26 34 25.5523 34 25C34 24.4477 33.5523 24 33 24H15Z"
+                              fill="#ffffff" id="mainIconPathAttribute"></path>
+                            <path d="M26 44V40H30V44L28 42.5L26 44Z" fill="#ffffff" id="mainIconPathAttribute"></path>
+                          </svg>
+                        </i>
+                        <h2>Certifications</h2>
+                      </div>
+                      <div class="resume__text">
+                        <div style="display: flex; align-items: center; gap:8px; padding-bottom: 2em;">
+                          <img style="position: static; width: 32px; height: 32px;"
+                            src="data:image/jpeg;base64,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">
+                          </img>
+                          <div class="extra">
+                            <div class="extra-info">
+                              Product Expect Certified - Promo Engine.
+                            </div>
+                            <div class="color-gray">Issued by Capillary Technologies - Apr 2022</div>
+                          </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap:8px;">
+                          <img style="position: static; width: 32px; height: 32px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12F6IAGa0gMwW8A5Ls4Sf2L1RY3Zn_SjqdJ6-fHqqhMpvs6bpkgK-SkE8OE-EhBCBdGk&usqp=CAU">
+                          </img>
+                          <div class="extra">
+                            <div class="extra-info">
+                              Oracle Certified Associate, Java SE 8 Programmer.
+                            </div>
+                            <div class="color-gray">Issued by OracleOracle - May 2018</div>
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
-                  </div>
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Software Engineer via Recro payroll</div>
-                      <div class="color-gray">Dec 2020 - Dec 2021 . 1 yr 1 mo</div>
-                    </div>
-                  </div>
+                  </section>
                 </div>
 
-                <div class="resume__text">
-                  <div class="extra-info padding-bottom-16">
-                    <div>Infoview Technologies</div>
-                    <div class="color-gray">2 yrs 7 mos</div>
-                  </div>
-                  <div class="add-before extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Engineer (Vaken Technologies)</div>
-                      <div class="color-gray">Jul 2020 - Dec 2020 . 6 mos</div>
-                      <div class="color-gray">Vaken is newly derived company from Infoview</div>
-                    </div>
-                  </div>
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Trainee Engineer</div>
-                      <div class="color-gray">Jun 2018 - Jun 2020 . 2 yrs 1 mo</div>
-                    </div>
-                  </div>
-                </div>
-            </section>
-          </div>
+              </div>
 
-          <div style="padding-bottom: 2rem;" data-sortable-2="" class="resume__side resume__blocks_container"
-            data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
-            <section edit_link="/resume/skills/edit" section="#<Sections::Skill:0x00000000077bc5d0>" actions="true"
-              class="animated fadeInRight delay-2s resume__section resume__skills" style="" data-id="8700676d-6c01-4fd5-b831-7d649d529675"
-              data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/8700676d-6c01-4fd5-b831-7d649d529675/sort">
-              <div class="resume__content">
-                <div class="resume__section-title">
-                  <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em"
-                      height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1696 1536"
-                      class="iconify icon:fa:book" data-inline="false" data-width="1em" data-height="1em"
-                      data-icon="fa:book" style="transform: rotate(360deg);">
-                      <path
-                        d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43zm-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"
-                        fill="currentColor"></path>
-                    </svg></i>
-                  <h2>Skills</h2>
-                </div>
-                <div class="resume__text">
-                  <div class="extra">
-                    <div class="extra-info">
-                      React.js, Node.js, JavaScript(Es6, Ecma20), CSS3 &amp; HTML5
-                    </div>
-                    <div class="extra-details">
-                      <div class="extra-details__progress" style="width:95%"></div>
-                    </div>
-                  </div>
+            </div>
 
-                  <div class="extra">
-                    <div class="extra-info">
-                      Redux, Antd, Intl, UT/IT - React testing library &amp; Jest
-                    </div>
-                    <div class="extra-details">
-                      <div class="extra-details__progress" style="width:85%"></div>
-                    </div>
-                  </div>
+            <div class="columns-container-right">
 
-                  <div class="extra">
-                    <div class="extra-info">
-                      Git, Scurm, Metrics - GTM, New relic, Bugsnag &amp; Fullstory
-                    </div>
-                    <div class="extra-details">
-                      <div class="extra-details__progress" style="width:75%"></div>
-                    </div>
-                  </div>
 
-                  <div class="extra">
-                    <div class="extra-info">
-                      On call - Site 24*7 alert, New relic incident alert &amp; Grafana
-                    </div>
-                    <div class="extra-details">
-                      <div class="extra-details__progress" style="width:65%"></div>
-                    </div>
-                  </div>
+              <div data-sortable-2="" class=" resume__blocks_container"
+                data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
+                <section edit_link="/resume/skills/edit" section="#<Sections::Skill:0x00000000077bc5d0>" actions="true"
+                  class="animated fadeInRight delay-3s resume__section resume__skills" style=""
+                  data-id="8700676d-6c01-4fd5-b831-7d649d529675"
+                  data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/8700676d-6c01-4fd5-b831-7d649d529675/sort">
+                  <div class="resume__content">
+                    <div class="resume__section-title">
+                      <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                          fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16" id="IconChangeColor">
+                          <path
+                            d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"
+                            id="mainIconPathAttribute"></path>
+                          <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
+                            id="mainIconPathAttribute"></path>
+                        </svg></i>
+                      <h2>Honors & awards</h2>
 
-                  <div class="extra">
-                    <div class="extra-info">
-                      Mysql, PostgreSQL, Mongodb, Sqlite, Redis &amp; Postman
                     </div>
-                    <div class="extra-details">
-                      <div class="extra-details__progress" style="width:55%"></div>
-                    </div>
-                  </div>
 
-                  <div class="extra">
-                    <div class="extra-info">
-                      React Native, Java, Vue.js, Socket, Webrtc, SVN &amp; FB pixel
+                    <div class="resume__text">
+                      <div style="display: flex; align-items: center; gap:8px" class="padding-bottom-16">
+                        <img style="position: static; width: 32px; height: 32px;"
+                          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhUQEA8REBUVFRUVEhcVEBAWFRAXFRUWFhgSFRcYHSggGB0mGxYVITEhJSkrLi4uFx8zODMsNygtLi0BCgoKDg0OGxAQGi0lICYtLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcBAgj/xABEEAACAQICBwQHBQUGBwEAAAAAAQIDEQQFBhIhMUFRYSJxgZETMkJSobHBByNictEUU5KiskNzgpPh8CQzNFSzwvEV/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAQFBgMCAQf/xAAxEQACAgECAwUHBAMBAAAAAAAAAQIDBBExBRIhE0FRYdEiMnGBkaGxFMHh8AZCUmL/2gAMAwEAAhEDEQA/AO4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxVK0YpuUlFLe20kvFkLi9Mcvp7JYqEmuENap/QmfYxctlqeJWRj1k0ifBUJ/aLl63Sqy7qUvrYU/tFy9751Y99Gf0udf09v/AC/ocv1VH/a+pbwQOF0vy+p6uLpp8ptwf86RM0q0ZLWjJSXNNNeaOUouPvLQ7RnGXutP5mUHiZ6fD0AAAAAAAD5bAPoGpiMfRp/8yrCH5pRRGVtLsDH+31vywnL5I8SshHdo6Qqsn7sW/gieBWHpxgffn/lSMtHTTAS/tnH81OovoeVfU9pI6PDyF1dcvoyxA0cJmlCr/wAqtTqflkm/I3EzonrscGmnoz6AB9PgAAAAAAAMdSaSbbsltbfBcwDyrVjFOUmoxSu22kkubZzzST7RrN08FFS4OrNbP8EePe/JkBptpXLFzdKlJxw8XsX75r25dOS8X0qhb4uAtOa36epR5nEnryVfU3MxzKvXetXqzqv8Uti7o7l4I0wC0SUVoipcm3qwengPp5BsYPFVaT1qVSdJ84TlHztvMAsfGk11Pqemxccq+0TGUrKso4mPW0J/xRVvNF6yPTPB4m0VU9FN+xUtFt8ovdLwdzilhYg3YVM9uj8vTYn08Qur6PqvP13P0genFdHtM8VhbRbdel7k5O8V+Ce9dzujp+R6SYbFQc6dSzirzhOynDq1y6rYVN2POrfbxLrHzK7ui6Pwf96k0a+KxVOmtapOMFzbSKtnWmkI3hhrVH779RflXtfLvKfi8fUqy16s3N9Xu7lwKbJ4lCvpDq/sXmNwyy3rP2V9/oXTMNNILZQg5/ildR8FvfwK1j8/xVX1q0orlDsr4bfNkWpHlyluzb7N5dPBdF6/cu6cCiraOr8X1/g+Zq+17XzMMoGwz5cSOpE9PQ05QMcom5KBhlA7RmdYyMEXZ3Wxrc1sa8SfyjTDFUNjl6aHuze3wlvXjcgpQPhokV2yg9YvQ8201XR0sin/AH6nYsh0hoYuN6crSXrQlslHr1XVE0cHw9edOSqU5OMou6a3o6voppAsXT7VlVhb0iW58pro/gXOLl9r7Mt/yZbiPDHje3DrH8FhABNKkAAAFH+1DOXSoLDwdpV761t6pxtred0u65eDjP2l4lzx0432U4QgvGOu/wCv4EnDgpWrXZdSFxCxwpem76FUFj6se6pfO1Ga0PiwsfaiXLQPRRYl/tFdfcxdox/fSW9P8K4893M42ZKgtWdaaJWz5IkRo/onisX2qcdSn+8ndRf5Vvl4bOqL1lv2bYSKXp51K747fRx8FHb8S6U6ailGKSSVkkrJJcEZSptzbZvo9F5F/Tw+mtdVq/P0K/T0Ny5bsJTffrS+bMdfQfLpbP2ZR/LOpH5MsgI/aT/6f1JPYVaacq+iOf5h9mdF7aFedN8ppTj8LP4sp+b6IYzD3lOl6SC9um9ZLvVrrxVjt7InP88pYWGtPtSfqQXrTf0XU6/rZ1rWT6eZHlwyq1qMI6N7aHCbH3G62p2JHN8ROvVlWlGEXJ3tCOql5b+97WaWqfaeJ036xX0ZGzuCZWFpOS1XjHu+Ph+PM2KOJ4P/AOkhg6VSrLUpQlUlyim/PkQ1i4aF6VrDWoV4r0beyaitaDfvWV5LrvXUq8rhVU581b0XevQtuH/5LZGHZ3LV90vX1+pJZdoVXlZ1pxpLku3LxtsXmywYfQzCx9b0lR9ZNf02LBSqxklKLUk1dNO6afFMynyvAoh/rr8SZZn5Fm8tPh0IiOjeD/7ePnL9TDV0Uwct1Nx/LJonQdnj1NaOK+hxWRanqpP6somZ6EySboVNf8M9j8JLZ5lTxWFlCThOLjJb01ZnZrETnuTU8TC0laa9SXGL5PmuhX5PDItc1XR+HcWWLxayD0t6rx716/M5NKBhnAksZhJU5ypzVpRdmasoFKm09GaaFiaTRpOJv5BmcsNXhVW5O0l70H6y+vekYJQMTgd4WOL1R7lGNkXCWz6HdKc00mtqauutzIQuh9dzwdFveo6r/wADcfoTRp4y5op+JgJwcJOL7noAAejyeM4lp1D/AI/EX96HxpQO3HJ/tPwbjio1LbKlNfxQdn8HA748+WRX8SjrTr4Mplj2x92PbEvtij5T3CYaVScacd85Riu+TS+p3rLsHCjThRgrRhFRXhxfV7zjuh0E8bQT9+/ioya+KR2xES+bloXHDIJRlL5HoAOBaA8YZEZ/nMMNTu+1OWyEb73zfJHmc4wjzS2PUISnJRitWzzSDO4YaHCVRrsQ59XyRzbGValabqVZa0n5LolwRkr151ZupUlrSlvf0XJGfCYSU2oQjrSexIy2ZnTvnpHbuXiafExIYsNZe9p1fgR0MDKbUYxcpN2SW9l30f0Lo01r4mMas5JrVavCCa2pc318iYyLI4YeN3aVRrtS5dI8kTCRb4GE60p2e9+CqzeIO3WuHSP5/g5bpRoTOjerhlKpT3yjvnT7veXxXXeU+x+gmUbS7Q1TvXwsUp7501sVTm48pdOJa8zMvkYK96v6ehW9EtKZ4WSpzvOi3tXGnf2ofVHV8LiYVIKpTkpRkrxaexo4RKLTs001saas01vTRYNE9I5YSerK8qMn2o+4/fj9VxOfaI8YuU4exPb8fwdeBhw9eM4qcJKUZJOLTumnxRmPZbgAAFK08wC7FdLf2JeTcX8H8CmygdK0winhpdJQa8/0uc9lAy3FIqGT071qabhVrdGj7noacoGKcDcnAxyiQ1MtoyOj6Cxtg4fmn/WywkbkGGdLD0qb2NQV+97X8WySNjTFxrin4GIvnz2yku9v8gAHQ5Aqv2g5W62Gc4q86L111j7a8tv+EtR8yjc+p6HiyCnFxfefn6x7Yn9L8ieFrtRX3U7ypPgucPD5WIKx5dmhnp1uEnFmxlWK9DWp1vcnGT7k9vwud1hNNJp3TV11ucAkdL+zrP1VpfstSX3lJdi/t0+Fusd3dbqel1WpO4faoydb79i7gGKtVjGLlJpJJtt8Ej4WxqZvmUMPTdSb6RXGcuEUcwx+NqV6jq1HdvcuEVwiuhtaRZxLE1dbaoR2U10959WaNGBmOI5vavlj7q+/majh+H2EOaXvP7eRsYWi5NRim23ZLi2dDyHJ40I3dnUfrPl+FdDT0Vyb0cfS1F25LYvcT+rLGkTuGYHZrtbPee3l/JV8Qze1fZwfsr7hHoBclWDxnoAKbploqqydegrVUu0luqpf+3XjuObOLWxqz433rozvTRQ9O9HN+Lox2rbWiuK/eLrz8zhdB6cyK/LxtVzx37yI0M0jeGl6Kq70ZP8AypP2l+F8fPmdRhJNXTuvmcJZetAdIt2ErS/uW/8Ax/p5cjnTf/q/kecTI09iXyL+DxM+KlRRTbdktr6EpvQsiv6ZV/u40/eld90f9WimSgTOb4p1qjnw3R6Jf7+JHSgYfPylfkSkttl8v5NLhV9lUovfdmlKBvaP5d6avGLXZi9afcttvF2RhlAvWjWV+gp3ku3Ozl05R8CTwyh32+S6v9kes7K7Krpu+i9SZR6AbAzAAAAAABG53lNPE0pUqi37YvjCS3SRx7NMvqYepKlVVpLykuEovin+p3MhdI8gp4unqytGau6c0tsG/muaPMoKREysbtVqtzis2eUMVOlONSnJwlF3i1wf+9htZvl1XDVHSrR1ZLc+E170XxRGyZ110RSaOMtNmdh0S0wpYtKnUapV1vjuVT8VO/y3r4mhpxnOs/2Wm9i21bcXwh9X4HMMFRcppJtW23Wxq3FPgyxSbbu2227ttttt8W3vKTiWXyx7KO73+Btf8foleu2tXSPReb/j8n1TiWjRLKPST9LNdiD2J+1L9EQWCwznKMIq7k0l4nUMuwkaVONOK2RXm+LIHDMZXWc8l7Mfu+4teKZXZw5Ivq/x/JtI9ANOZsAAAAAAHzKN9j2n0ADkGl+TfstdqK+7n2qfTnDw+TRAqo0002mmmmt6a2po63prlnp8NOyvOn95Dn2d8fFX+By3L8rq1tsVqx957vDn4FTlKNL5pPRFTdjy7XSC320OpaKZ/HE0Neckpw7NXv4T7mtvnyMGc5i6nYjsh/V39CEyjLKdCLUW25W12361t2zclv8AM33Ez3EeNyuj2VfSPe+9+hpsLGcIqVvvGlKBilA3ZQJPKsn12p1F2eC97v6FfhY9mTYoVr0XmyzsvjVHWR8aO5RdqtUWxbYJ8X736FoSCR9G+xMWGNUoR+b8WUN10rZ80gACScgAAAAAAAACMzvJqOKp+jrRvxjJbJQfvRfA5BpPoxXwbvJekpN9mpFbOimvZZ3I1MynBUpymlKKjJyTSaaS3NPeeZbEe7Gjb8fE4llNG0NbjL5LcSlKBjhHkklwS3LojbowMZk3c8nJm5xqFjURqj3L797NHMcXVpSh6Gcqc09bWi7NLcl47dhc9G9NNa1PFpRluVRK0ZfmXsvqtncU2rS1pt+C7kbdDDdCdRlPGrSj8zG5V87cmU0+my+COuQkmrp3T3PmfZQ8izOpQtHbKHuvh1jy7txdMNiY1IqUHdP4dGXWJnVZC0XR96PpsAAmgAHlwD01MbjadKOtUkly5volxIvO9IIUrwp2nU4+7Dv69CpV8VOpJznJyb4v5LkiqzeJxp9mvrL7I+pasnMfns6l1DsR/mfe+HgRsJGpGZljMyeTbbfLmserJVcktjdjMy0227JNt7kuJHwrK9k7lg0ZqrXlFpXcbp8dj2r4o442Ir7o1N6and3csdUbuAylK0qiu+EeC7+ZLpHtj03uLiVY0OSter82QLLJTesgACUeAAAAAAAAAAAAAQWmNbVwlS3tasf4pJP4XJ0rmnP/AEy/vI/Uj5cuWibXg/wd8Va3wXmvyc/owN/C0ryjHm0vN2MFKJu4fY0+TT8mYiUlzLU1dsno9Cax2iLj2qD1l7sray7nuZFrCuL1ZRaa3pqzR0SnK6TXFX8zFi8HTqK0435Piu5mly+ExtXNS9H4dz9DGxS7ykQpm7gMVKlLWju4rhI2cdlE6e1duPPiu9GikZO7t8S32tYyW397yfVXGa6FwwteM4qUd3y6MzlWyvF+jlt9V7JfqWiLNpwzPWXVzf7Ldfv8yNfT2UtD1lX0o0g1L0KL7ftyXsdF+L5EjpLmv7PRcl68uzDvfHwW05o6jbbbbbd23vbfE+cQynBckN39iJZZy9EbCmZIyMeDw86klCnFyk+C+b5LqXPJtFYwtOvacvdXqLv975FLThWXv2V08e4VtsgstyytW9SNo8ZPZH/XwNjSjKY4ehBqcpSlVUZPcmtSbsl3pF6jBJWSslutssU/7Q6+yjT5uU34JRX9T8iylw6nHplJ9Xpv6I6uXQgMDsROZBVtXh1uvNMgcO9hJ5K/v6f5kUFev6iMv/SO0JezodAR6Abo4gAAAAAAAAAAAAAAAhNLqOthpfhcZfG31Js1sbh1Upypv2oteaOV8OeqUfFM91T5Jxl4M5nTibdOJ8+icW4venZ96M0EfnljeuhqpST6otujuM16ag32obO9cH9PAmSi4HESpyU48N/Vci4YPFxqR1ovvXFPkzXcH4hG+tVyftL7rxM9l0dnNyWzNloiMxypSvKmrPiuEv0ZLhljk4tWTDksWv7fAjQslB6xKW422PY+JZspra1Nc1sfh/oaee4ZbKiVttpdeTM2Qeo+/wCiM5wvHnh8RlQ3qnFvXxXcybkTVtKn5lO09xjliFTvspxX8UtrflqmjkGTVMVLs9mC9afLoubMukGGdXMZ0k7Oc6avyvSht8jouCwkKUI06cdWMVZfq+bLaOP29spT2TKSEe0m29kzHluW0qENSnG3N75SfNs3geFooqK0RLPJOxzDSTHenrua9VdmHcuPi7vxJ3SvSFO+HoyvwqST/ki/mynye1FLxHJU32cdlv8AE4WWLZG5TkTOjENbEQ/DrSfgrfNogYyLjoPhdk6zW/sR8Nsn528itw6OfIivn9DpCWpa0egGuPYAAAAAAAAAAAAAAAPGegAqukmW2l6aK2P1+j4PuIaCL/UgpJpq6ex9StZjk0oNyppyjy4x/VGU4zwyXM76lqnuvDzLXEy1yqufyZFxRsYetKD1oOz/AN7zCkZEZhSlF6xejROkk1oycw2drdUi11W7yNz/APVo2vr/AMsv0KwkeouKv8hyq46PSXm11+25ClhVt9CRzPMfSdmKtFO+3eyXyujq00nve1+JD5XgXN60l2V/N0RZEXHBq7rrJZl+7Wi+H92ImS4xSrh3HPdOqU6OKp4mGy6unwU4c+9W+JL5dpvhpRXptajLj2ZSi30cU/iTGf5VHE0XSex74S92S3Pu4eJybG4OpRm6dWLjJcHx6p8V1LG5zom5R2f5Ka2U6Zcy2Z0jE6a4OK7Ep1XyjTmvjKxV840rr104R+5g96i+1Lvl+hWUz7UiLbk2zWmy8jlLJnLyM8ZH0mYFI3ssy+rXlqUoOXN7ow6yfD5kHs3J6JCDb6IzZfhJ1qkacFtl5RXGT6I6jgcLGlTjTjuird/VmjkOSww0LLtTfrytv6LkuhLl3hYnYrV7sn1xaXXcAAnHQAAAAAAAAAAAAAAAAAAHlj0AGlictpT2uNnzWxkfUyH3anmv0J0EHI4bi3vWcFr47M6wvsh7rIBZHPjOPkzaw+TwW2Tc/gvIlQcauDYdb5lD6tv8s9SybZLRs+IxS2LYfYBZpaHAEfmeVUcRHVrU1Lk90o9zW1EgA0mtGfGk+jKLitAFf7rENLlOF/irfI16f2f1b9rEQS6Qk/qjoQI7xKn3HH9NV4FUwGg+HhtqSnWfJvVj5Lb8SyYfDwhFRhCMIrckkkjODtCqEPdWh1jCMdkAAez0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/2Q==">
+                        </img>
+                        <div class="extra-info">
+                          <div>Capillary Technologies</div>
+                        </div>
+                      </div>
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>GEM - Best Performer Award</div>
+                          <div class="color-gray">Issued by Recro - Jul 2021</div>
+                        </div>
+                      </div>
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Capillary Star</div>
+                          <div class="color-gray">Issued by Capillary - Oct 2021</div>
+                        </div>
+                      </div>
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Commendation For FOSS United Hackathon</div>
+                          <div class="color-gray">Issued by FOSS - Nov 2021</div>
+                        </div>
+                      </div>
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Proud Recron - #lifebeyondcode</div>
+                          <div class="color-gray">Issued by Recro - Nov 2021</div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="extra-details">
-                      <div class="extra-details__progress" style="width:45%"></div>
+
+
+                    <div class="resume__text">
+                      <div style="display: flex; align-items: center; gap:8px" class="padding-bottom-16">
+                        <svg style="color: red" height="28" width="28" id="icons" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512">
+                          <path
+                            d="M130.54,358.31c-12.83,1.88-33.95,5.38-48-10.56S56.34,293.32,51,258.92c-7.88-50.7-.06-93.43,22-120.31,13-15.83,30.06-25,49.34-26.46,16.51-1.27,41.18,5.19,65,43.19,14.92,23.81,26.27,55.44,31.14,86.77h0c5.88,37.82,11.61,78.18-8.44,92.65-11.31,8.17-19.43,11-38.62,15.57C155.64,354.08,143.38,356.42,130.54,358.31Z"
+                            fill="red"></path>
+                          <path
+                            d="M107.72,390.84l108.89-22.46c9.2-1.9,16.58,3.16,20,18.32,11.22,49.76-4.86,109.3-55.22,109.3-47.69,0-79.47-54.36-84.66-83.58C94.36,399.17,97.74,392.89,107.72,390.84Z"
+                            fill="red"></path>
+                          <path
+                            d="M340.59,254.34c-19.19-4.55-27.31-7.4-38.62-15.57-20.05-14.47-14.32-54.83-8.44-92.65h0c4.87-31.33,16.22-63,31.14-86.77,23.8-38,48.47-44.46,65-43.19C408.93,17.63,426,26.78,439,42.61c22.08,26.88,29.9,69.61,22,120.31-5.35,34.4-17.46,72.76-31.59,88.83s-35.13,12.44-48,10.56S356.36,258.08,340.59,254.34Z"
+                            fill="red"></path>
+                          <path
+                            d="M404.28,294.84,295.39,272.38c-9.2-1.9-16.58,3.16-20,18.32C264.18,340.46,280.26,400,330.62,400c47.69,0,79.47-54.36,84.66-83.58C417.64,303.17,414.26,296.89,404.28,294.84Z"
+                            fill="red"></path>
+                        </svg>
+                        <div class="extra-info">
+                          <div>Infoview Technologies</div>
+                        </div>
+                      </div>
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Core team employee - 19/2.5k</div>
+                          <div class="color-gray">Associated with Vaken - Jul 2020</div>
+                        </div>
+                      </div>
+
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Commendation for Transport app developed for cultural event in short span</div>
+                          <div class="color-gray">Associated with Infoview - 2020</div>
+                        </div>
+                      </div>
                     </div>
+
+                    <div class="resume__text">
+                      <div style="display: flex; align-items: center; gap:8px" class="padding-bottom-16">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="IconChangeColor" height="28"
+                          width="28">
+                          <path
+                            d="M3.33 8L10 12l10-6-10-6L0 6h10v2H3.33zM0 8v8l2-2.22V9.2L0 8zm10 12l-5-3-2-1.2v-6l7 4.2 7-4.2v6L10 20z"
+                            id="mainIconPathAttribute"></path>
+                        </svg>
+                        <div class="extra-inf">
+                          <div>KNCET</div>
+                        </div>
+                      </div>
+
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>Best Outstanding Student Award (Whole college)</div>
+                          <div class="color-gray">Issued by Tamil Nadu Ministers - Jan 2018</div>
+                        </div>
+                      </div>
+                      <div class="extra-info flex-item padding-bottom-16">
+                        <div class="round-icon"></div>
+                        <div style="flex: 1;">
+                          <div>College and Class Rank</div>
+                          <div class="color-gray">Issued by KNCET - (2014 - 2018)</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="resume__text">
+
+
+                      <a style="color: #222;"
+                        href="https://www.linkedin.com/in/vignesh-palanisamy-devops/details/featured/" target="_blank">
+                        <div style="display: inline-flex; align-items: center; gap:4px;">
+                          <div>Reference link</div>
+                          <div style="margin-bottom: 4px;">
+                            <svg width="16" height="16" style="color: #42a2e0" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24">
+                              <path
+                                d="M18,10.82a1,1,0,0,0-1,1V19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8A1,1,0,0,1,5,7h7.18a1,1,0,0,0,0-2H5A3,3,0,0,0,2,8V19a3,3,0,0,0,3,3H16a3,3,0,0,0,3-3V11.82A1,1,0,0,0,18,10.82Zm3.92-8.2a1,1,0,0,0-.54-.54A1,1,0,0,0,21,2H15a1,1,0,0,0,0,2h3.59L8.29,14.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L20,5.41V9a1,1,0,0,0,2,0V3A1,1,0,0,0,21.92,2.62Z"
+                                fill="#42a2e0"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
                   </div>
+                </section>
+              </div>
+
+
+              <div class="animated fadeInLeft delay-0.5s">
+                <div data-sortable-2="" class=" resume__blocks_container"
+                  data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template"
+                  style="width: 50%;">
+                  <section edit_link="/resume/skills/edit" section="#<Sections::Skill:0x00000000077bc5d0>"
+                    actions="true" class="resume__section resume__skills" style=""
+                    data-id="8700676d-6c01-4fd5-b831-7d649d529675"
+                    data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/8700676d-6c01-4fd5-b831-7d649d529675/sort">
+                    <div class="resume__content">
+                      <div class="resume__section-title">
+                        <i class="resume__svg-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            id="IconChangeColor">
+                            <path
+                              d="M5 14L5.90909 11.3333M11 14L9.90909 11.3333M9.90909 11.3333L7.72727 6L5.90909 11.3333M9.90909 11.3333H5.90909"
+                              stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              id="mainIconPathAttribute"></path>
+                            <path
+                              d="M13 11.8462H16.5M20 11.8462H18.25M16.5 11.8462V10M16.5 11.8462H17.375H18.25M18.25 11.8462C18.0556 13.2821 16.2667 17.0154 13 18M18.8333 18C17.6667 17.3846 14.6333 15.1692 14.1667 13.6923"
+                              stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              id="mainIconPathAttribute"></path>
+                          </svg>
+
+                        </i>
+                        <h2>Language</h2>
+                      </div>
+                      <div class="resume__text">
+                        <div class="extra">
+                          <div class="extra-info">
+                            English.
+                          </div>
+                        </div>
+
+                        <div class="extra">
+                          <div class="extra-info">
+                            Tamil.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
-            </section>
+            </div>
+
+
           </div>
-
-          <div data-sortable-2="" class="resume__side resume__blocks_container"
-            data-after-update-action-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/change_template">
-            <section edit_link="/resume/skills/edit" section="#<Sections::Skill:0x00000000077bc5d0>" actions="true"
-              class="animated fadeInRight delay-3s resume__section resume__skills" style="" data-id="8700676d-6c01-4fd5-b831-7d649d529675"
-              data-update-url="/resume/a8f564c8-12ef-494e-a5cc-f8aa60d96292/sections/8700676d-6c01-4fd5-b831-7d649d529675/sort">
-              <div class="resume__content">
-                <div class="resume__section-title">
-                  <i class="resume__svg-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em"
-                      height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1696 1536"
-                      class="iconify icon:fa:book" data-inline="false" data-width="1em" data-height="1em"
-                      data-icon="fa:book" style="transform: rotate(360deg);">
-                      <path
-                        d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43zm-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"
-                        fill="currentColor"></path>
-                    </svg></i>
-                  <h2>Honors & awards</h2>
-
-                </div>
-
-                <div class="resume__text">
-                  <div class="extra-info padding-bottom-16">
-                    <div>Capillary Technologies</div>
-                  </div>
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>GEM - Best Performer Award</div>
-                      <div class="color-gray">Issued by Recro - Jul 2021</div>
-                    </div>
-                  </div>
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Capillary Star</div>
-                      <div class="color-gray">Issued by Capillary - Oct 2021</div>
-                    </div>
-                  </div>
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Commendation For FOSS United Hackathon</div>
-                      <div class="color-gray">Issued by FOSS - Nov 2021</div>
-                    </div>
-                  </div>
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Proud Recron - #lifebeyondcode</div>
-                      <div class="color-gray">Issued by Recro - Nov 2021</div>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="resume__text">
-                  <div class="extra-info padding-bottom-16">
-                    <div>Infoview Technologies</div>
-                  </div>
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Core team employee - 19/2.5k</div>
-                      <div class="color-gray">Associated with Vaken - Jul 2020</div>
-                    </div>
-                  </div>
-
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Commendation for Transport app developed for cultural event in short span</div>
-                      <div class="color-gray">Associated with Infoview - 2020</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="resume__text">
-                  <div class="extra-info padding-bottom-16">
-                    <div>KNCET</div>
-                  </div>
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>Best Outstanding Student Award (Whole college)</div>
-                      <div class="color-gray">Issued by Tamil Nadu Ministers - Jan 2018</div>
-                    </div>
-                  </div>
-                  <div class="extra-info flex-item padding-bottom-16">
-                    <div class="round-icon"></div>
-                    <div style="flex: 1;">
-                      <div>College and Class Rank</div>
-                      <div class="color-gray">Issued by KNCET - (2014 - 2018)</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="resume__text">
-                  <span>Reference:</span>
-                  <a style="color: #42a2e0;"
-                    href="https://www.linkedin.com/in/vignesh-palanisamy-devops/details/featured/" target="_blank">
-                    #linkedin/vignesh-palanisamy-devops/featured</a>
-                </div>
-
-              </div>
-            </section>
-          </div>
-
-
-
-
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 
